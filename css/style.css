@@ -1,0 +1,205 @@
+/*Fontes Google*/
+.playwrite-it-moderna {
+    font-family: "Playwrite IT Moderna";
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+:root {
+    --color01: #694946;
+    --color02: #D99791;
+    --color03: #dbbebb;
+    --color04: #f0b4ab;
+    --font01: "Playwrite IT Moderna";
+    --font02: "Roboto";
+}
+
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-image: url(/ToDoList/img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--font02);
+    color: var(--color01);
+}
+
+#title {
+    font-family: var(--font01);
+    text-align: center;
+    color: var(--color01);
+}
+
+button {
+    background-color: #fff;
+    color: var(--color02);
+    border: 2px solid var(--color02);
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: var(--color02);
+    color: #fff;
+}
+
+button:hover > i {
+    color: #fff;
+}
+
+button i {
+    color: var(--color02);
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input,
+select {
+    padding: 0.25rem 0.5rem;
+    outline: none;
+    border: 2px solid var(--color02);
+    color: var(--color01);
+    font-family: var(--font02);
+}
+
+.hide {
+    display: none;
+}
+
+/*Todo header*/
+.todo-container {
+    max-width: 450px;
+    margin: 5rem auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+/*Todo form*/
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid var(--color03);
+}
+
+#todo-form p,
+#edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+}
+
+#cancel-btn {
+    margin-top: 5px;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/*Todo toolbar*/
+#toolbar {
+    padding: 1rem;
+    border-radius: 1px solid #CCC;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid #DDD;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column; 
+}
+
+#filter select {
+    flex: 1;
+}
+
+/*Todo list*/
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: var(--color04);
+    border-radius: 10px;
+}
+
+.done h3 {
+    font-style: italic;
+    text-decoration: line-through;
+    color: #fff;
+}
+
+
